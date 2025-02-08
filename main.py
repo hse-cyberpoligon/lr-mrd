@@ -1,7 +1,7 @@
 from variants import variants
 from transliterate import translit # type: ignore
 from utils    import *
-import requests, time, os # type: ignore
+import requests, time, os          # type: ignore
 import json
 
 GRP = False # GENERATE_RANDOM_PERMISSIONS
@@ -52,6 +52,7 @@ def main():
     response    = request_task(surname, name) # response    = {'variant': 1, 'tasks' : [1, 2, 3, 4, 5]}
     if 'variant' not in response.keys() or 'tasks' not in response.keys():
         print("Ошибка получения заданий для выполнения!")
+        print(response)
         exit()
     files       = generate_personal_task(variants[response['variant']-1], surname)
     max_result  = len(response['tasks']) * len(files)
