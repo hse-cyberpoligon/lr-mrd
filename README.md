@@ -8,10 +8,11 @@ variants.py – Наборы вариантов заданий
 ```
 
 
-
+```
 apt install ca-certificates
 apt update
 apt install python3-venv
 python3 -m venv .venv
 source .venc/bin/activate
 pip install -r requirments.txt
+```
