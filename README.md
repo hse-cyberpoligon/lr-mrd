@@ -7,7 +7,7 @@ utils.py    – Функции проверки выполнения задан�
 variants.py – Наборы вариантов заданий
 ```
 
-
+Установка на Астру
 ```
 apt install ca-certificates
 apt update
@@ -17,6 +17,16 @@ source .venc/bin/activate
 pip install -r requirments.txt
 ```
 
+Компиляция
 ```
 pyinstaller --collect-all="transliterate" -F main.py
+```
+
+Развертывание бинарника на ВМ
+```
+sudo su
+chmod root Checker
+chgrp root Checker
+chmod a=rx Checker
+# Add to Autostart
 ```
