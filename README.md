@@ -16,3 +16,7 @@ python3 -m venv .venv
 source .venc/bin/activate
 pip install -r requirments.txt
 ```
+
+```
+pyinstaller --collect-all="transliterate" -F main.py
+```
