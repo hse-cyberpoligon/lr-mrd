@@ -143,6 +143,8 @@ def main():
     print(f"Итоговый балл: {result} из {max_result}")
     response = finish_task(surname, name)
     print(f"Ответ сервера: {response['message']}")
+    input()
+    input()
     exit()
 
 
