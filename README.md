@@ -25,7 +25,7 @@ pyinstaller --collect-all="transliterate" -F main.py
 Развертывание бинарника на ВМ
 ```
 sudo su
-chmod root Checker
+chown root Checker
 chgrp root Checker
 chmod a=rx Checker
 # Add to Autostart
